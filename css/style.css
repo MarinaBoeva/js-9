@@ -1,0 +1,192 @@
+nav{
+  width: 800px;
+  height: 40px;
+  margin: 20px auto;
+  background-color: #8B8386;
+}
+.menu{
+  margin: 0;
+  padding: 0;
+}
+.menu > .menu__item{
+  display: inline-block;
+  position: relative;
+  width: 150px;
+}
+.menu > .menu__item>.menu__link{
+  height: 40px;
+  line-height: 40px;
+}
+.menu__item{
+  list-style: none;
+  width: 120px;
+  text-align: center;
+}
+.submenu{
+    padding: 0;
+    position:absolute;
+    left:0;
+    top:40px;
+    width:120px;
+    z-index: 1;
+    background-color: rgba(139, 131, 134, 0.9);
+    display: none;
+}
+.menu__item  .menu__item{
+    position:relative;
+    margin:0;
+    display:block;
+    text-align: left;
+    text-indent: 10px;
+}
+.menu__item  .menu__item .menu__link{
+  margin: 0 auto;
+  width: 100px;
+}
+.menu__item  .menu__item .submenu{
+    position:absolute;
+    top:0;
+    left:120px;
+    margin:0;
+}
+.menu__link:hover{
+  color: #CDB7B5;
+}
+.menu__link{
+  display: block;
+  line-height: 30px;
+  height: 30px;
+  text-decoration: none;
+  color: #EEE0E5;
+  font-family: 'segoe ui';
+}
+.menu__link span{
+  font-size: 12px;
+}
+/*carousel*/
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+}
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.jcarousel li {
+  list-style: none;
+  height: 400px;
+  width: 600px;
+  float: left;
+}
+.jcarousel__wrapper{
+  margin: 0 auto;
+  height: 400px;
+  width: 600px;
+  overflow: hidden;
+  padding: 40px;
+  position: relative;
+}
+.jcarousel-prev,.jcarousel-next{
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  font-size: 15px;
+  top:200px;
+  background-color:#8B8386;
+  border-radius: 20px;
+  text-align: center;
+  color:#fff;
+  text-decoration: none;
+}
+.jcarousel-prev{
+ left:0px;
+}
+.jcarousel-next{
+ right:0px;
+}
+.jcarousel-pagination{
+  position: absolute;
+  top:400px;
+  right:280px;
+}
+.jcarousel-pagination a {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  text-align: center;
+  background-color:#8B8386;
+  margin: 5px;
+  color: transparent;
+}
+.jcarousel-pagination .active {
+  box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #fff;
+  background-color:#8B8386;
+}
+
+.selectBox-dropdown{
+  margin-left: 100px;
+}
+/*checkbox*/
+form{
+  display:block;
+  width: 300px;
+  margin: 20px 0;
+  padding:40px 100px;
+}
+.checkwrap{
+  width: 50px;
+  height: 30px;
+  overflow: hidden;
+}
+.niceCheck {
+  position: absolute;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	cursor: pointer;
+	background: url(../img/checkbox-sprite.png);
+	overflow: hidden;
+}
+.niceChecked {
+	background-position: 0 -16px;
+}
+.checkwrap input {
+     display: none;
+ }
+.niceCheckDisabled {
+ background-position: 0 -48px;
+}
+
+.checkbox{
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+.label{
+  cursor: pointer;
+}
+.label:after{
+  content: " ";
+	display: inline-block;
+	width: 16px;
+  height: 16px;
+  background: url(../img/checkbox-sprite.png);
+  position: relative;
+	top: 3px;
+	margin-left: 15px;
+}
+.checkbox:checked + .label:after {
+	background-position: 0 -16px;
+	}
+  .label:hover:after {
+  	background-position: -16px 0;
+  }
+  .checkbox:checked + .label:hover:after {
+  	background-position: -16px -16px;
+  	}
