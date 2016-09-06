@@ -140,30 +140,22 @@ form{
   margin: 20px 0;
   padding:40px 100px;
 }
-.checkwrap{
-  width: 50px;
-  height: 30px;
-  overflow: hidden;
+label{
+  display: inline-block;
 }
 .niceCheck {
-  position: absolute;
-	width: 16px;
-	height: 16px;
-	display: inline-block;
-	cursor: pointer;
-	background: url(../img/checkbox-sprite.png);
-	overflow: hidden;
+width: 16px;
+height: 16px;
+display: inline-block;
+cursor: pointer;
+background: url(../img/checkbox-sprite.png);
 }
-.niceChecked {
-	background-position: 0 -16px;
-}
-.checkwrap input {
-     display: none;
- }
-.niceCheckDisabled {
- background-position: 0 -48px;
+.niceCheck input {
+  display: none;
 }
 
+
+		/*checkbox css*/
 .checkbox{
   position: absolute;
   clip: rect(0, 0, 0, 0);
